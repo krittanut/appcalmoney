@@ -8,9 +8,6 @@ import { NbThemeModule, NbLayoutModule, NbInputModule, NbDatepickerModule, NbBut
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { NbIconModule } from '@nebular/theme';
 import { CalComponent } from './cal/cal.component';
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
-// import { ChartsModule, WavesModule } from 'angular-bootstrap-md'
-
 
 @NgModule({
   declarations: [
@@ -28,7 +25,6 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     NbInputModule,
     NbDatepickerModule.forRoot(),
     NbButtonModule,
-    MDBBootstrapModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

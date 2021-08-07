@@ -1,10 +1,8 @@
 .iconhead {
-    position: relative;
+    float: right;
     background-color: white;
-    border-radius: 30%;
-    margin: 10px; 
-    left: 70%;
-    // text-align: end;
+    border-radius: 50%;
+    margin: 10px;
 }
 
 .center-col {
@@ -18,10 +16,7 @@ a {
     margin: 10px;
 }
 
-a.topmenu:hover {
+a:hover {
     
     background-color: rgb(185, 233, 255);
 }
-
-
-
