@@ -3,21 +3,25 @@
         padding-bottom: 15px;
     }
 </style>
+
+
 <div>
     <div>
-        Name : <input nbInput #name status="info">
+        Name : <input nbInput #name status="primary">
     </div>
     <div>
-        Age : <input nbInput #age status="info">
-        Start work Age : <input nbInput #sage status="info">
+        Age : <input nbInput #age status="primary">
+        Start work Age : <input nbInput #sage status="primary">
     </div>
     <div>
-        Salary : <input nbInput #salary status="info">
-        Starter salary : <input nbInput #ssalary status="info">
+        Salary : <input nbInput #salary status="primary">
+        Starter salary : <input nbInput #ssalary status="primary">
     </div>
-    <div><button nbButton shape="semi-round" status="info"
+    <div><button nbButton shape="semi-round" status="primary"
             (click)="Calculate(name.value,age.value,sage.value,salary.value,ssalary.value)">Calculate</button>
     </div>
 
     <p *ngIf="curr">คุณ {{cal_name}} ควรมีเงินเก็บตอนนี้เท่ากับ {{ curr }} บาท</p>
+    <app-home [value]="curr"></app-home>
+
 </div>

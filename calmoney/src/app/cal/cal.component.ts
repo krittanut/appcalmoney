@@ -30,6 +30,8 @@ export class CalComponent {
     this.curr = new Intl.NumberFormat().format(this.result);
 
   }
-  constructor() { }
 
 }
+
+
+

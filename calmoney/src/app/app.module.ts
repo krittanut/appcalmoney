@@ -8,11 +8,14 @@ import { NbThemeModule, NbLayoutModule, NbInputModule, NbDatepickerModule, NbBut
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { NbIconModule } from '@nebular/theme';
 import { CalComponent } from './cal/cal.component';
+import { ChartsModule } from 'angular-bootstrap-md';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +28,7 @@ import { CalComponent } from './cal/cal.component';
     NbInputModule,
     NbDatepickerModule.forRoot(),
     NbButtonModule,
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

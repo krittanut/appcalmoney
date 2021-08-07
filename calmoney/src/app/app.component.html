@@ -2,12 +2,16 @@
 
   <nb-layout-header fixed>
     <!-- Insert header here -->
-    <img src="assets/Piggy.png" style="width: 60px; height: 60px; margin: 15px;">
+    <a routerLink="">
+      <img src="assets/Piggy.png" style="width: 60px; height: 60px; margin: 15px;">
+    </a>
     <span class="font-header">
-      <a routerLink="" title="Home">Home</a>
-      <a routerLink="cal" title="Calculate">Calculate</a>
+      <a routerLink="" title="Home" class="topmenu">Home</a>
+      <a routerLink="cal" title="Calculate" class="topmenu">Calculate</a>
     </span>
-
+    <a class="iconhead" href="https://github.com/krittanut/">
+      <nb-icon icon="github" title="Go to my github"></nb-icon>
+    </a>
     <a class="iconhead" href="https://www.facebook.com/profile.php?id=100001020143861">
       <nb-icon icon="facebook" title="Go to my facebook"></nb-icon>
     </a>
@@ -18,13 +22,13 @@
   </nb-layout-header>
 
   <nb-layout-column class="center-col">
-
     <router-outlet></router-outlet>
 
   </nb-layout-column>
 
   <nb-layout-footer fixed>
     <!-- Insert footer here -->
+
   </nb-layout-footer>
 
 </nb-layout>
