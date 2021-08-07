@@ -1,7 +1,22 @@
 .iconhead {
-    left: 85%;
-    position:relative;
+    float: right;
     background-color: white;
     border-radius: 50%;
     margin: 10px;
+}
+
+.center-col {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 20%;
+    margin: 10px;
+}
+
+a:hover {
+    
+    background-color: rgb(185, 233, 255);
 }

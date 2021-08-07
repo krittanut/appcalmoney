@@ -2,14 +2,22 @@
 
   <nb-layout-header fixed>
     <!-- Insert header here -->
-    This is Header test
+    <img src="assets/Piggy.png" style="width: 60px; height: 60px; margin: 15px;">
+    <span class="font-header">
+      <a routerLink="" title="Home">Home</a>
+      <a routerLink="cal" title="Calculate">Calculate</a>
+    </span>
 
-    <nb-icon icon="facebook" class="iconhead" title="Go to My facebook"></nb-icon>
-    <nb-icon icon="twitter" class="iconhead" title="Go to My Twitter"></nb-icon>
+    <a class="iconhead" href="https://www.facebook.com/profile.php?id=100001020143861">
+      <nb-icon icon="facebook" title="Go to my facebook"></nb-icon>
+    </a>
+    <a class="iconhead" href="https://twitter.com/ksangsri1">
+      <nb-icon icon="twitter" title="Go to my Twitter"></nb-icon>
+    </a>
     <!-- <nb-icon icon="star"></nb-icon> -->
   </nb-layout-header>
 
-  <nb-layout-column>
+  <nb-layout-column class="center-col">
 
     <router-outlet></router-outlet>
 
